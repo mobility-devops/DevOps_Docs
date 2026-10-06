@@ -1,52 +1,28 @@
 # DevOps_Docs
 
-현대오토에버 모빌리티 SW 스쿨 4기 DevOps 프로젝트(택시 배차 서비스)의 설계·운영 문서 저장소.
+현대오토에버 모빌리티 SW 스쿨 4기 DevOps 프로젝트(택시 배차 서비스)의 **확정 문서 저장소**.
+팀이 확정한 내용만 둔다. 초안과 논의는 노션에서 한다.
 
+## 문서
+
+| 문서 | 내용 | 기준일 |
+|---|---|---|
+| [프로젝트 아키텍처](architecture/project-architecture.md) | 목표 아키텍처 전체: 물리·VM 구성, 네트워크, CI·CD, 앱·DB, 모니터링, 보안, 저장소 규칙 | 2026-10-06 |
+
+- 원본은 노션 「프로젝트 아키텍처」다. 서로 다르면 노션이 기준이다.
 - 표기: ✅ 결정 · 💡 제안(회의에서 확인) · ❓ 미정
-- 노션 문서를 2026-09-30 기준으로 옮김. 이후 인프라나 코드를 바꾸는 PR에서 관련 문서도 함께 수정.
-- 문서 추가·수정은 작업 브랜치 → `main` 대상 PR → Squash and merge.
 
-> ⚠️ **[프로젝트 아키텍처](architecture/overview.md)만 2026-10-06 기준으로 최신이다.** 나머지 문서는 2026-09-30 기준이라
-> 10/1~10/5 변경(노트북 서버·worker3, br-lab, mon-01, Gateway API, SonarQube Cloud, webhook, Wazuh·controlnode·sonar-01 제외 등)이 빠져 있다.
+## 규칙
 
-## 문서 목록
-
-### 아키텍처 (`architecture/`)
-
-| 문서 | 내용 |
-|---|---|
-| [프로젝트 아키텍처](architecture/overview.md) | 목표 아키텍처 전체: 물리·VM 구성, 네트워크, CI/CD, 앱·DB, 모니터링, 보안, 저장소 규칙 (10/6 기준) |
-| [쉽게 이해하는 아키텍처](architecture/overview-easy.md) | 옛 「아키텍처 개요」를 쉬운 말로 풀어쓴 해설 (9/30 기준) |
-| [Backend 설계](architecture/backend.md) | 택시 배차 서비스 백엔드 전체 설계와 v1 구현 범위 |
-| [현재 환경 현황](architecture/current-environment.md) | 호스트 PC, VM, 네트워크의 현재 상태 |
-
-### 로드맵 (`roadmap/`)
-
-| 문서 | 내용 |
-|---|---|
-| [로드맵과 할 일](roadmap/plan.md) | 0~7단계 작업, 완료 기준, 결정 현황, 리스크 |
-| [쉽게 이해하는 로드맵](roadmap/plan-easy.md) | 로드맵을 쉬운 말과 비유로 풀어쓴 해설 |
-
-### 규칙 (`conventions/`)
-
-| 문서 | 내용 |
-|---|---|
-| [Git 전략](conventions/git-strategy.md) | 브랜치·커밋·PR 규칙, Issue/PR 템플릿, CI 연계 |
-
-### 회의 기록 (`meetings/`)
-
-| 날짜 | 문서 |
-|---|---|
-| 2026-09-24 | [회의 기록](meetings/2026-09-24.md) |
-| 2026-09-28 | [회의 기록](meetings/2026-09-28.md) · [Port](meetings/2026-09-28-port.md) · [서버 초기 구축](meetings/2026-09-28-server-setup.md) · [Server GUI 작업 정리](meetings/2026-09-28-server-gui.md) |
-| 2026-09-29 | [회의 기록](meetings/2026-09-29.md) |
-| 2026-09-30 | [회의 기록](meetings/2026-09-30.md) |
+- 노션에서 확정된 내용이 바뀌면 이 저장소에도 반영한다(기준일 갱신).
+- 새 문서는 팀이 확정한 것만 추가한다.
+- 작업 브랜치 → `main` 대상 PR(승인 1명) → Squash and merge.
 
 ## 관련 저장소
 
 | 저장소 | 역할 |
 |---|---|
-| [DevOps_Backend](https://github.com/mobility-devops/DevOps_Backend) | Spring Boot 코드, Dockerfile, Jenkinsfile |
-| [DevOps_GitOps](https://github.com/mobility-devops/DevOps_GitOps) | 배포 상태(Kustomize, Argo CD 설정) |
+| [DevOps_Backend](https://github.com/mobility-devops/DevOps_Backend) | 앱 코드, Dockerfile, Jenkinsfile |
+| [DevOps_GitOps](https://github.com/mobility-devops/DevOps_GitOps) | 배포 상태(Kustomize, Argo CD) |
 | [DevOps_Infra](https://github.com/mobility-devops/DevOps_Infra) | VM(Vagrant)과 서버 설정 |
-| **DevOps_Docs** (이 저장소) | 설계·운영 문서, ADR, Runbook |
+| **DevOps_Docs** (이 저장소) | 확정 문서 |
