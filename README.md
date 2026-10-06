@@ -6,6 +6,10 @@
 - 노션 문서를 2026-09-30 기준으로 옮김. 이후 인프라나 코드를 바꾸는 PR에서 관련 문서도 함께 수정.
 - 문서 추가·수정은 작업 브랜치 → `main` 대상 PR → Squash and merge.
 
+> ⚠️ **아래 문서는 2026-09-30 기준이다.** 10/4~10/5에 아키텍처가 바뀌었으므로(노트북 서버·worker3 추가, br-lab,
+> mon-01, Gateway API, SonarQube Cloud, webhook, Wazuh·controlnode·sonar-01 제외 등) 최신 설계는 노션 「프로젝트 아키텍처」와
+> 그 사본 [DevOps_Infra/docs/architecture.md](https://github.com/mobility-devops/DevOps_Infra/blob/main/docs/architecture.md)를 본다.
+
 ## 문서 목록
 
 ### 아키텍처 (`architecture/`)
@@ -43,7 +47,7 @@
 
 | 저장소 | 역할 |
 |---|---|
-| DevOps_Backend | Spring Boot 코드, Dockerfile, Jenkinsfile |
-| gitops | 배포 상태(Kustomize, Argo CD 설정) |
-| DevOps_Infra | Vagrantfile, Ansible(VM 설정, K8s·MySQL·Wazuh 설치) |
-| DevOps_Docs | 설계·운영 문서, ADR, Runbook (이 저장소) |
+| [DevOps_Backend](https://github.com/mobility-devops/DevOps_Backend) | Spring Boot 코드, Dockerfile, Jenkinsfile |
+| [DevOps_GitOps](https://github.com/mobility-devops/DevOps_GitOps) | 배포 상태(Kustomize, Argo CD 설정) |
+| [DevOps_Infra](https://github.com/mobility-devops/DevOps_Infra) | VM(Vagrant)과 서버 설정 |
+| **DevOps_Docs** (이 저장소) | 설계·운영 문서, ADR, Runbook |
