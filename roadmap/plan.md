@@ -1,5 +1,8 @@
 # 로드맵과 할 일
 
+> ⚠️ **9/30 기준 문서라 지금 설계와 다르다.** 10/1~10/5에 아키텍처가 바뀌었다(노트북 서버·worker3 추가, br-lab, mon-01,
+> Gateway API, SonarQube Cloud, webhook, Wazuh·controlnode·sonar-01 제외 등). 최신 설계는 [프로젝트 아키텍처](../architecture/overview.md)를 본다.
+
 > 원본: 노션 「로드맵과 할 일」에서 2026-09-30 기준으로 옮김.
 
 > 📌 **상태: 회의 전 초안** · 기준일 2026-09-30 · 담당자와 일정은 회의에서 결정.

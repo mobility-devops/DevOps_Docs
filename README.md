@@ -6,9 +6,8 @@
 - 노션 문서를 2026-09-30 기준으로 옮김. 이후 인프라나 코드를 바꾸는 PR에서 관련 문서도 함께 수정.
 - 문서 추가·수정은 작업 브랜치 → `main` 대상 PR → Squash and merge.
 
-> ⚠️ **아래 문서는 2026-09-30 기준이다.** 10/4~10/5에 아키텍처가 바뀌었으므로(노트북 서버·worker3 추가, br-lab,
-> mon-01, Gateway API, SonarQube Cloud, webhook, Wazuh·controlnode·sonar-01 제외 등) 최신 설계는 노션 「프로젝트 아키텍처」와
-> 그 사본 [DevOps_Infra/docs/architecture.md](https://github.com/mobility-devops/DevOps_Infra/blob/main/docs/architecture.md)를 본다.
+> ⚠️ **[프로젝트 아키텍처](architecture/overview.md)만 2026-10-06 기준으로 최신이다.** 나머지 문서는 2026-09-30 기준이라
+> 10/1~10/5 변경(노트북 서버·worker3, br-lab, mon-01, Gateway API, SonarQube Cloud, webhook, Wazuh·controlnode·sonar-01 제외 등)이 빠져 있다.
 
 ## 문서 목록
 
@@ -16,8 +15,8 @@
 
 | 문서 | 내용 |
 |---|---|
-| [아키텍처 개요](architecture/overview.md) | 목표 아키텍처, VM·네트워크, CI/CD, 모니터링, 보안, 자원 운영 방안 |
-| [쉽게 이해하는 아키텍처](architecture/overview-easy.md) | 아키텍처 개요를 쉬운 말과 비유로 풀어쓴 해설 |
+| [프로젝트 아키텍처](architecture/overview.md) | 목표 아키텍처 전체: 물리·VM 구성, 네트워크, CI/CD, 앱·DB, 모니터링, 보안, 저장소 규칙 (10/6 기준) |
+| [쉽게 이해하는 아키텍처](architecture/overview-easy.md) | 옛 「아키텍처 개요」를 쉬운 말로 풀어쓴 해설 (9/30 기준) |
 | [Backend 설계](architecture/backend.md) | 택시 배차 서비스 백엔드 전체 설계와 v1 구현 범위 |
 | [현재 환경 현황](architecture/current-environment.md) | 호스트 PC, VM, 네트워크의 현재 상태 |
 
