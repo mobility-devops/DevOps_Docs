@@ -7,7 +7,7 @@
 
 ```text
 architecture/   프로젝트 아키텍처 (목표 구조 전체)
-guides/         구축 가이드 (영역별: vm, backend, ci, security, cd, monitoring)
+guides/         구축 가이드 (영역별: vm, backend, frontend, ci, security, cd, monitoring)
 runbooks/       장애 대응·운영 절차 (알림별 대응 문서)
 adr/            주요 결정 기록 (무엇을 왜 그렇게 정했는지)
 ```
